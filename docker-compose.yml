@@ -6,12 +6,12 @@ services:
       context: ./app
       dockerfile: Dockerfile
     depends_on:
-      - db
+      - php-food-app-db
     volumes:
       - ./app/src:/var/www/html
     ports:
       - "8080:80"
-  db:
+  php-food-app-db:
     container_name: php-food-app-db
     image: mysql
     restart: always
@@ -30,4 +30,4 @@ services:
     environment:
       PMA_HOST: php-food-app-db
     depends_on:
-      - db
+      - php-food-app-db

@@ -3,7 +3,7 @@
 $base_url = "http://localhost:8080";
 
 // var database
-$host = "db";
+$host = "php-food-app-db";
 $database = "php-food-app";
 $username = "user";
 $password = "password";
